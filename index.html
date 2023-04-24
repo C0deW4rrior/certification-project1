@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="title">Programmer Survey Form</h1>
+            <p id="description">Thank you for your time, its important to us</p>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label">Name</label>
+                    <input id="name" class="form-input" type="text" required placeholder="Enter your name" />
+                </div>
+                <div class="form-group">
+                    <label id="email-label">Email</label>
+                    <input id="email" class="form-input" type="email" required placeholder="Enter your email" />
+                </div>
+                <div class="form-group">
+                    <label id="number-label">Age (optional)</label>
+                    <input id="number" class="form-input" type="number" min="13" max="100" placeholder="Enter you age" />
+                </div>
+                <div class="form-group">
+                    <label>Which is your favourite programming lenguage?</label>
+                    <select id="dropdown" class="form-select">
+                        <option class="option">Select an option</option>
+                        <option value="javascript">Javascript</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                        <option value="rust">Rust</option>
+                        <option value="c++">C++</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">What is your favorite programming tool?</label>
+                    <label for=""><input class="input-radio" type="radio" name="numbers" value="visual-code-studio"> Visual Code Studio </label>
+                    <label for=""><input class="input-radio" type="radio" name="numbers" value="notepad++"> Notepad++ </label>
+                    <label for=""><input class="input-radio" type="radio" name="numbers" value="sublime-text"> Sublime Text</label>
+                    <label for=""><input class="input-radio" type="radio" name="numbers" value="other"> Other </label>
+                </div>
+                <div class="form-group">
+                    <label for="">Which career is your interest?</label>
+                    <label for="">
+                        <input class="input-checkbox" type="checkbox" value="front-end"> Front-End
+                    </label>
+                    <label for="">
+                        <input class="input-checkbox" type="checkbox" value="data-science"> Data Science
+                    </label>
+                    <label for="">
+                        <input class="input-checkbox" type="checkbox" value="full-stack"> Full-Stack
+                    </label>
+                    <label for="">
+                        <input class="input-checkbox" type="checkbox" value="other"> Other
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="">Any comments or suggestions?</label><br>
+                    <textarea class="input-textarea" name="comments" id="comments" placeholder="Enter your comment here..."></textarea>
+                </div>
+                <div class="form-group">
+                    <button id="submit" type="submit" class="submit-button">Submit</button>
+                </div>
+            </form>
+        </div>
+        <footer>
+            <div class="footer">
+                BARATECNICS Copyright © 2022 Baratecnia - All rights reserved || Designed By: Nick Lopez
+            </div>
+        </footer>
+    </body>
+</html>
